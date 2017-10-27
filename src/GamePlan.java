@@ -30,15 +30,16 @@ private  void createLocations(){
     secretTunnel = new Location("The ocean grotto leads to a secret tunnel");
 
     //initialise location exit
-    murkeyWaters.setExit("east,", oceanGrotto );
-    murkeyWaters.setExit("west,", caveEntrance);
+    murkeyWaters.setExit("East,", oceanGrotto );
+    murkeyWaters.setExit("West,", caveEntrance);
     murkeyWaters.setExit("north,", caveInside);
     murkeyWaters.setExit("south,", secretTunnel);
 
+    oceanGrotto.setExit("north,",murkeyWaters);
     oceanGrotto.setExit("east,", caveInside );
     oceanGrotto.setExit("wesr,", murkeyWaters);
     oceanGrotto.setExit("south,",secretTunnel);
-    oceanGrotto.setExit("north,",murkeyWaters);
+
 
 
     caveEntrance.setExit("east,",oceanGrotto );
@@ -46,11 +47,10 @@ private  void createLocations(){
     caveEntrance.setExit("north,",murkeyWaters);
     caveEntrance.setExit("south,",secretTunnel);
 
-    secretTunnel.setExit("east,",oceanGrotto );
-    secretTunnel.setExit("west,",caveEntrance);
     secretTunnel.setExit("north,",murkeyWaters);
+    secretTunnel.setExit("east,",oceanGrotto );
     secretTunnel.setExit("south,",caveInside);
-
+    secretTunnel.setExit("west,",caveEntrance);
 }
 
 

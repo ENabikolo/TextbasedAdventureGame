@@ -100,7 +100,7 @@ public class Location {
     }
 
     //Locations {roomName, description, item}
-public Location(String m_locationDescription){
+ public Location(String m_locationDescription){
     this.m_locationDescription = m_locationDescription;
     exits = new HashMap<String, Location>();
 
@@ -120,10 +120,6 @@ public Location(String m_locationDescription){
     public void setM_locationDescription(String m_locationDescription) {
         this.m_locationDescription = m_locationDescription;
     }
-    //constructor
-    public Location(){
-        //Blank title + description
 
-    }
 
 }
