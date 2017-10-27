@@ -4,18 +4,14 @@ import java.util.ArrayList;
 public abstract class GamePlan {
 
     //constructor
-    private Location;
-    private Compass ;
-    private Parser parser;
+    private Location barrenMoor;
+    private String Compass;
     private String moor;
     private String locationDescription;
     private String name;
-    private ArrayList<locationDescription> items;
 
-    ()
 public GamePlan(){
     createLocations();
-    parser = new Parser();
 }
 
 /**
@@ -34,10 +30,10 @@ private  void createLocations(){
     secretTunnel = new Location("The ocean grotto leads to a secret tunnel");
 
     //initialise location exit
-    murkeyWaters.setExit("east,",oceanGrotto );
-    murkeyWaters.setExit("west,",caveEntrance);
-    murkeyWaters.setExit("north,",caveInside);
-    murkeyWaters.setExit("south,",secretTunnel);
+    murkeyWaters.setExit("east,", oceanGrotto );
+    murkeyWaters.setExit("west,", caveEntrance);
+    murkeyWaters.setExit("north,", caveInside);
+    murkeyWaters.setExit("south,", secretTunnel);
 
     oceanGrotto.setExit("east,", caveInside );
     oceanGrotto.setExit("wesr,", murkeyWaters);

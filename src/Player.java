@@ -1,5 +1,11 @@
 public class Player {
-    printWelcome();
+
+    private Location barrenMoor;
+
+    @Override
+    public Player toString() {
+        return ("Number of Locations: " + ());
+    }
 
 
     String name;

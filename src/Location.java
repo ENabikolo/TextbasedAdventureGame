@@ -23,7 +23,51 @@ public class Location {
         this.items = items;
     }
 
-    public void setExits(HashMap<String, Location> exits) {
+    public String getMagicCompass() {
+        return magicCompass;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public ArrayList<Compass> getItems() {
+        return items;
+    }
+
+    public HashMap<String, Location> getExits() {
+        return exits;
+    }
+
+    public Location getMurkeyWaters() {
+        return murkeyWaters;
+    }
+
+    public Location getOceanGrotto() {
+        return oceanGrotto;
+    }
+
+    public Location getFoggyClouds() {
+        return foggyClouds;
+    }
+
+    public Location getCaveEntrance() {
+        return caveEntrance;
+    }
+
+    public Location getCaveInside() {
+        return caveInside;
+    }
+
+    public Location getCaveFloor() {
+        return caveFloor;
+    }
+
+    public Location getSecretTunnel() {
+        return secretTunnel;
+    }
+
+    public void setExit(HashMap<String, Location> exits) {
         this.exits = exits;
     }
 
